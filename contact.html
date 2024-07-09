@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Your Taco Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- contact -->
+<table border="0" width="100%">
+    <tr width="85%">
+        <td align="center"><img src="./taco blander logo.png" width="300" </td>
+    </tr>
+</table>
+<fieldset>
+    <legend><h1>Contact Us</h1></legend>
+    <form action="submit_contact_form.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="enter your name.." required>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="enter your email.." required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</fieldset>
+
+<!-- end contact -->
+
+<!-- location -->
+<h2 class="location">Our location</h2>
+49 siraj ahammed st. ,<br>
+CDA Avenue Chottogram
+
+<!-- end location -->
+ 
+<hr>
+<h4>copyright &copy;toco blander</h4>
+
+</body>
+</html>
